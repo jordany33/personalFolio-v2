@@ -226,4 +226,4 @@ If you have any questions or need help customizing the template, feel free to op
 
 ---
 
-**Made with ❤️ for developers who want to showcase their work beautifully**
+**Made with ❤️ by Jordan and Diane**
