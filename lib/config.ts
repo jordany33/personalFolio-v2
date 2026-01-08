@@ -4,10 +4,10 @@
 export const config = {
   // Personal Information
   personal: {
-    name: 'Your Name',
-    title: 'Software Engineer',
-    location: 'San Francisco, CA',
-    email: 'your.email@example.com',
+    name: 'Dayeon Yoon',
+    title: 'Aerospace Engineering Undergraduate',
+    location: 'Irvine, CA',
+    email: 'diane040611@gmail.com',
     github: 'https://github.com/yourusername',
     linkedin: 'https://linkedin.com/in/yourusername',
     twitter: 'https://twitter.com/yourusername',
@@ -17,9 +17,9 @@ export const config = {
   // Hero Section
   hero: {
     greeting: "Hey, I'm",
-    name: 'Your Name',
-    title: 'Software Engineer',
-    subtitle: 'Building beautiful, performant, and user-centric digital experiences',
+    name: 'Dayeon Yoon',
+    title: 'Aerospace Engineering Undergraduate',
+    subtitle: '',
     cta: {
       primary: {
         text: 'View My Work',

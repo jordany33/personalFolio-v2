@@ -17,11 +17,11 @@ export default function Hero() {
       className="min-h-screen flex items-center justify-center relative overflow-hidden section-padding"
     >
       {/* Animated Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 via-accent-900/20 to-primary-900/20 animate-gradient" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-200/20 via-accent-200/20 to-primary-200/20 animate-gradient" />
 
       {/* Floating Orbs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500/30 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-500/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary-400/30 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-200/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
 
       <div className="container-custom relative z-10">
         <div className="text-center">
@@ -30,7 +30,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-lg md:text-xl text-gray-300 mb-4"
+            className="text-lg md:text-xl text-gray-800 mb-4"
           >
             {config.hero.greeting}
           </motion.p>
@@ -40,9 +40,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 text-gray-700"
           >
-            <span className="gradient-text">{config.hero.name}</span>
+            {config.hero.name}
           </motion.h1>
 
           {/* Title */}
@@ -50,7 +50,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-2xl md:text-4xl text-gray-300 mb-6"
+            className="text-2xl md:text-4xl text-gray-800 mb-6"
           >
             {config.hero.title}
           </motion.h2>
@@ -60,7 +60,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12"
+            className="text-lg md:text-xl text-black max-w-2xl mx-auto mb-12"
           >
             {config.hero.subtitle}
           </motion.p>
