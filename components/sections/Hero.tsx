@@ -23,14 +23,14 @@ export default function Hero() {
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary-400/30 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-200/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
 
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 pt-20 md:pt-10">
         <div className="text-center">
           {/* Greeting */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-lg md:text-xl text-gray-800 mb-4"
+            className="text-lg md:text-xl text-gray-600 tracking-tight mb-4"
           >
             {config.hero.greeting}
           </motion.p>
@@ -40,7 +40,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 text-gray-700"
+            className="text-4xl md:text-5xl lg:text-6xl tracking-tight text-gray-700 mb-3"
           >
             {config.hero.name}
           </motion.h1>
@@ -50,7 +50,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-2xl md:text-4xl text-gray-800 mb-6"
+            className="text-xl md:text-xl tracking-tight text-gray-600 mb-6"
           >
             {config.hero.title}
           </motion.h2>
@@ -76,7 +76,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection(config.hero.cta.primary.link)}
-              className="px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-shadow"
+              className="px-8 py-2 bg-transparent border-2 border-gray-800 text-gray-800 rounded-none font-semibold hover:bg-primary-300 hover:text-white transition-colors"
             >
               {config.hero.cta.primary.text}
             </motion.button>
@@ -84,7 +84,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection(config.hero.cta.secondary.link)}
-              className="px-8 py-4 glass text-white rounded-full font-semibold hover:bg-white/10 transition-colors"
+              className="px-8 py-2 bg-transparent border-2 border-gray-800 text-gray-800 rounded-none font-semibold hover:bg-gray-800 hover:text-white transition-colors"
             >
               {config.hero.cta.secondary.text}
             </motion.button>

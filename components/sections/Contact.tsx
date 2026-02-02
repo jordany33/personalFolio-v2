@@ -37,13 +37,13 @@ export default function Contact() {
         >
           {/* Section Title */}
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl tracking-tight mb-4">
               <span className="gradient-text">{config.contact.title}</span>
             </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-4">
+            <p className="text-gray-700 text-lg max-w-2xl mx-auto mb-4">
               {config.contact.subtitle}
             </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full" />
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-primary-600 mx-auto rounded-full" />
           </motion.div>
 
           <div className="max-w-2xl mx-auto">
@@ -52,51 +52,51 @@ export default function Contact() {
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                       Name
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-black placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors"
                       placeholder="Your Name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                       Email
                     </label>
                     <input
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-black placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors"
                       placeholder="your.email@example.com"
                     />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                     Subject
                   </label>
                   <input
                     type="text"
                     id="subject"
                     name="subject"
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-black placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors"
                     placeholder="What's this about?"
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={6}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-black placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors resize-none"
                     placeholder="Your message here..."
                   />
                 </div>
@@ -104,7 +104,7 @@ export default function Contact() {
                   type="submit"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-lg font-semibold flex items-center justify-center gap-2 hover:shadow-lg transition-shadow"
+                  className="w-full px-8 py-4 bg-transparent border-2 border-gray-800 text-gray-800 rounded-none font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 hover:text-white transition-colors"
                 >
                   <Send size={20} />
                   Send Message

@@ -36,11 +36,11 @@ export default function Skills() {
         >
           {/* Section Title */}
           <motion.div variants={cardVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl tracking-tight mb-4">
               <span className="gradient-text">{config.skills.title}</span>
             </h2>
-            <p className="text-gray-400 text-lg mb-4">{config.skills.subtitle}</p>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full" />
+            <p className="text-gray-700 text-lg mb-4">{config.skills.subtitle}</p>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-primary-600 mx-auto rounded-full" />
           </motion.div>
 
           {/* Skills Grid */}
@@ -52,7 +52,7 @@ export default function Skills() {
                 whileHover={{ y: -10, scale: 1.02 }}
                 className="glass rounded-2xl p-8 hover:border-primary-500/50 transition-all duration-300"
               >
-                <h3 className="text-2xl font-bold mb-6 gradient-text">
+                <h3 className="text-2xl mb-6 text-primary-800">
                   {category.name}
                 </h3>
                 <div className="flex flex-wrap gap-3">
@@ -66,7 +66,7 @@ export default function Skills() {
                         delay: categoryIndex * 0.1 + skillIndex * 0.05,
                       }}
                       whileHover={{ scale: 1.1 }}
-                      className="px-4 py-2 bg-primary-500/20 text-primary-300 rounded-full text-sm font-medium border border-primary-500/30 hover:bg-primary-500/30 transition-colors cursor-default"
+                      className="px-4 py-2 bg-primary-500/20 text-primary-800 rounded-full text-sm font-medium border border-primary-500/30 hover:bg-primary-500/30 transition-colors cursor-default"
                     >
                       {skill}
                     </motion.span>

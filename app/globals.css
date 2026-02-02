@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: var(--font-roboto);
-  background: #e6e0e0;
+  background: #fffefe;
   color: #000000;
   overflow-x: hidden;
 }
@@ -29,21 +29,21 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #f8f7f7;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #60a5fa;
-  border-radius: 5px;
+  background: #d2d2d2;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b82f6;
+  background: #91adda;
 }
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #60a5fa 0%, #e5e7eb 100%);
+  background: linear-gradient(135deg, #4c5a71 0%, #8a8c8f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

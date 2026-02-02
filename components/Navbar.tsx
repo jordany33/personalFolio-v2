@@ -8,6 +8,7 @@ import Link from 'next/link'
 const navItems = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
+  { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
@@ -34,19 +35,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Link
-              href="#home"
-              className="text-2xl font-bold gradient-text"
-            >
-              Portfolio
-            </Link>
-          </motion.div>
+        <div className="flex items-center justify-center h-20">
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -59,7 +48,7 @@ export default function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className="text-gray-300 hover:text-white transition-colors relative group"
+                  className="text-gray-700 hover:text-primary-500 transition-colors relative group"
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300" />

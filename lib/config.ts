@@ -18,7 +18,7 @@ export const config = {
   hero: {
     greeting: "Hey, I'm",
     name: 'Dayeon Yoon',
-    title: 'Aerospace Engineering Undergraduate',
+    title: 'Aerospace Engineering Undergraduate @ UC Irvine',
     subtitle: '',
     cta: {
       primary: {
@@ -42,6 +42,29 @@ export const config = {
     ],
     image: '/images/profile.jpg', // Add your profile image
   },
+
+  //Experience Section
+  experience: {
+    title: 'Experience',
+    subtitle: 'My professional and technical journey',
+    items: [
+      {
+        role: 'Engineering Intern',
+        company: 'Company Name',
+        duration: 'Jun 2024 – Present',
+        description:
+          'Worked on system-level design, data analysis, and cross-functional engineering tasks.',
+      },
+      {
+        role: 'Aerospace Engineering Student',
+        company: 'UC Irvine',
+        duration: '2022 – Present',
+        description:
+          'Focused on propulsion, structures, and hands-on design projects including CanSat.',
+      },
+    ],
+  },
+  
 
   // Skills Section
   skills: {
@@ -67,9 +90,10 @@ export const config = {
   projects: {
     title: 'Featured Projects',
     subtitle: 'Some of my recent work',
-    items: [
+    list: [
       {
         title: 'Project One',
+        slug: 'project-one',
         description: 'A modern web application built with React and Next.js, featuring real-time updates and a beautiful UI.',
         image: '/images/project1.jpg',
         tags: ['React', 'Next.js', 'TypeScript'],
@@ -80,6 +104,7 @@ export const config = {
       },
       {
         title: 'Project Two',
+        slug: 'project-two',
         description: 'An innovative mobile-first platform that solves real-world problems with cutting-edge technology.',
         image: '/images/project2.jpg',
         tags: ['React Native', 'Node.js', 'MongoDB'],
@@ -90,6 +115,7 @@ export const config = {
       },
       {
         title: 'Project Three',
+        slug: 'project-three',
         description: 'A full-stack application with advanced features, showcasing modern development practices.',
         image: '/images/project3.jpg',
         tags: ['Next.js', 'PostgreSQL', 'AWS'],

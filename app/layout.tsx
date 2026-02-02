@@ -12,7 +12,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: 'Personal Portfolio | Engineer',
-  description: 'A vibrant and interactive personal portfolio website',
+  description: 'Personal portfolio website',
 }
 
 export default function RootLayout({

@@ -36,10 +36,10 @@ export default function About() {
         >
           {/* Section Title */}
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="gradient-text">{config.about.title}</span>
+            <h2 className="text-4xl md:text-5xl tracking-tight mb-4">
+            <span className="gradient-text">{config.about.title}</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full" />
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-primary-600 mx-auto rounded-full" />
           </motion.div>
 
           {/* Content */}
@@ -50,7 +50,7 @@ export default function About() {
                 <motion.p
                   key={index}
                   variants={itemVariants}
-                  className="text-lg text-gray-300 leading-relaxed"
+                  className="text-lg text-gray-700 leading-relaxed"
                 >
                   {paragraph}
                 </motion.p>
